@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 70px;
+    width: 400px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+button {
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.input-card button {
+    background-color: blue;
+    color: black;
+    width: 150px;
+    height: 40px;
+}
+
+.show-btn {
+    background-color: cyan;
+    color: black;
+}
+
+.remove-btn {
+    background-color: red;
+    color: black;
+}
+
+.swap-btn {
+    background-color: orange;
+    color: black;
+    position: fixed;
+    height:80px;
+    width: 80px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 200%;
+}
+
+.password-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}

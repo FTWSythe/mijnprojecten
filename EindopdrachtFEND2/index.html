@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <article class="card input-card" id="inputCard">
+            <h2>Safetylock</h2>
+            <label for="url">URL / naam:</label>
+            <input type="text" id="url" name="url"><br><br>
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button id="addPasswordBtn">Toevoegen</button>
+        </article>
+
+        <article class="card output-card" id="outputCard">
+            <ul id="passwordList"></ul>
+        </article>
+    </main>
+    <footer>
+        <button class="swap-btn" id="swapButton"><-></button>
+    </footer>
+</body>
+</html>
