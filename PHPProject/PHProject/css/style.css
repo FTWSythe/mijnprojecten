@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #333;
+}
+
+
+
+.navbar {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .nav-links a,
+.navbar .nav-auth a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a.active, .nav-auth a.active {
+    background-color: #00C389;
+}
+
+.nav-links a:hover, .nav-auth a:hover {
+    background-color: #555;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input {
+    width: calc(100% - 20px);
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.nav-auth a, .nav-auth span {
+    white-space: nowrap;
+}
+
+.nav-auth span {
+    color: white !important;
+}
+
+.main-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 80px auto 20px auto;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.blog-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.blog-box {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.blogs-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .blog-post {
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h3 {
+    margin-top: 0;
+  }
+  
+  .blog-post p {
+    margin-bottom: 0;
+  }
+
+.blog-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-box p {
+    font-size: 14px;
+    color: gray;
+}
+
+.blog-box h2 a {
+    color: blue;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.blog-box h2 a:hover {
+    color: darkblue;
+}
+
+.blog-content {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.blog-content h4 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.blog-content textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.blog-content button {
+    padding: 10px 20px;
+    background-color: #00C389;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-content button:hover {
+    background-color: #009974;
+}
+
+.blog-content p {
+    margin-bottom: 10px;
+}
+
+.comment-message {
+    background-color: #e0ffe0;
+    color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.comments-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box p {
+    margin: 0 0 10px;
+}
+
+.comment-box a {
+    color: #00796b; /* Verander de kleur naar wens */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.comment-box a:hover {
+    text-decoration: underline;
+}
+
+.comments-section h3 {
+    margin-bottom: 20px;
+}
+
+.comments-section h4 {
+    margin-top: 30px;
+}
+
+.comments-section form {
+    margin-top: 20px;
+}
+
+.comments-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.comments-section button {
+    background-color: #00796b; /* Verander de kleur naar wens */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comments-section button:hover {
+    background-color: #004d40; /* Verander de kleur naar wens */
+}
+
+.write-blog-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.write-blog-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.input-field textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.post-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.post-btn:hover {
+    background-color: #45a049;
+}
+
+.post-btn:active {
+    background-color: #388e3c;
+}
+
+.write-blog-container .input-field, .write-blog-container button {
+    box-sizing: border-box;
+}
+
+.notification {
+    position: fixed;
+    top: 20%; /* Verander deze waarde om de notificatie hoger te plaatsen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 9999;
+    display: none; 
+    width: auto;
+    max-width: 80%;
+}
+
+.notification.success {
+    background-color: #4CAF50; 
+}
+
+.notification.error {
+    background-color: #f44336; 
+}

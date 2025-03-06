@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .nav-links a,
+.navbar .nav-auth a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a.active, .nav-auth a.active {
+    background-color: #00C389;
+}
+
+.nav-links a:hover, .nav-auth a:hover {
+    background-color: #555;
+}
+
+.write-blog-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.write-blog-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-field textarea {
+    resize: vertical;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#content::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+.post-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.post-btn:hover {
+    background-color: #444;
+}
+
+.nav-auth span {
+    color: white;
+}

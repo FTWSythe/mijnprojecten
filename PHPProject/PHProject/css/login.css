@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 400px; 
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.login-container input {
+    width: calc(100% - 20px); 
+    max-width: 300px; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.login-container button {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box; 
+}
+
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px; 
+    text-align: center; 
+    padding: 0px; 
+}
+
+
+.navbar {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+
+.navbar .nav-links a,
+.navbar .nav-auth a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a.active, .nav-auth a.active {
+    background-color: #00C389;
+}
+
+
+.nav-links a:hover, .nav-auth a:hover {
+    background-color: #555;
+}
+
+
+.nav-auth span {
+    color: white;  
+}

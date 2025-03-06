@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto; 
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    box-sizing: border-box; 
+
+}
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.container input {
+    width: calc(100% - 20px); 
+    max-width: 300px; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.container button {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px;
+    background: black;  
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box; 
+}
+
+
+.container button:hover {
+    background: #009974;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center; 
+    margin-top: 0; 
+}
+
+
+.navbar {
+    background-color: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.nav-links-left, .nav-links-right {
+    display: flex;
+    gap: 15px;
+}
+
+
+.navbar .nav-links-left a,
+.navbar .nav-links-right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+
+.navbar .nav-links-right .active {
+    background-color: #00C389;  
+    color: white; 
+}
+
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+
+.navbar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-auth span {
+    color: white !important;  
+}
